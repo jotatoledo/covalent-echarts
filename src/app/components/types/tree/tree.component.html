@@ -26,7 +26,7 @@
                             [left]="'10%'"
                             [bottom]="'10%'"
                             [right]="'10%'"
-                            [data]="config.series[0].data"
+                            [data]="[data]"
                             [initialTreeDepth]="2"
                             [symbolSize]="10"
                             [itemStyle]="{ borderColor: '#3A4950', color: '#3A4950' }"
@@ -41,7 +41,7 @@
           <td-highlight lang="html">
             <![CDATA[
             <td-chart [style.height.px]="800"
-            [config]="{ xAxis: { show: false }, yAxis: { show: false }, grid: { borderColor: 'transparent' }}">
+            [config]="{ xAxis: { show: false }, yAxis: { show: false }, grid: { borderColor: 'transparent' } }">
               <td-chart-tooltip [trigger]="'item'">
                 <ng-template let-params let-ticket="ticket" tdTooltipFormatter>
                   <ng-container *ngIf="params">
@@ -59,11 +59,11 @@
                               [left]="'10%'"
                               [bottom]="'10%'"
                               [right]="'10%'"
-                              [data]="config.series[0].data"
+                              [data]="[data]"
                               [initialTreeDepth]="2"
                               [symbolSize]="10"
                               [itemStyle]="{ borderColor: '#3A4950', color: '#3A4950' }"
-                              [leaves]="{ label: { padding: [2.5, 5], fontSize: 9, distance: 5, position: 'right', backgroundColor: 'transparent', color: '#616d73' }}"
+                              [leaves]="{ label: { padding: [2.5, 5], fontSize: 9, distance: 5, position: 'right', backgroundColor: 'transparent', color: '#616d73' } }"
                               [label]="{ backgroundColor: '#3A4950', color: 'white', padding: [2.5, 5], borderRadius: 10, fontSize: 9, distance: 5, position: 'left' }">
               </td-chart-series>
             </td-chart>

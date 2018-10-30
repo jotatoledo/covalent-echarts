@@ -14,8 +14,10 @@ import {
   ITdLineStyle,
   ITdSeries,
   TdSeriesComponent,
+  TdOrient,
+  ITdTreeLeaves,
+  ITdTreeEmphasis,
 } from '@covalent/echarts/base';
-import { TdOrient, ITdTreeLeaves, ITdTreeEmphasis } from './tree-series.interface';
 
 interface ITdTreeSeries extends ITdSeries<'tree'> {
   zlevel?: number;

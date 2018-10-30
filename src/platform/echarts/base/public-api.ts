@@ -65,4 +65,8 @@ export {
   TdSeriesLayoutBy,
   TdProgressiveChunkMode,
   ITdMarkAreaEmphasis,
+  TdOrient,
+  ITdTreeLineStyle,
+  ITdTreeEmphasis,
+  ITdTreeLeaves,
 } from './series/series.interface';

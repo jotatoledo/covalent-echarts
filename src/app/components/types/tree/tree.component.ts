@@ -11,45 +11,8 @@ import zrUtil from 'echarts/lib/echarts';
 })
 export class TypesTreeComponent {
 
-  test: any = {
-    name: 'Start',
-    children: [
-      {
-        name: 'Paid Media',
-        children: [
-          { name: 'User Drop Off', value: 30000 },
-          { name: 'Call Center', value: 10000, children: [
-            { name: 'Branch Conversion', value: 8000 },
-            { name: 'Online Conversion', value: 10000 },
-            { name: 'User Drop Off', value: 2000 },
-          ]},
-          { name: 'Online Conversion', value: 5000 },
-        ],
-      },
-      {
-        name: 'Email',
-        children: [
-          {
-            name: 'In Store',
-            children: [
-              {
-                name: 'Leave Website, Banner Ad',
-                children: [
-                  {name: 'Registered Online', value: 6000, children: [
-                    { name: 'Branch Conversion', value: 800 },
-                    { name: 'User Drop Off', value: 5200},
-                  ]},
-                ],
-              },
-            ],
-          },
-        ],
-      },
-      { name: 'Call Center', value: 15000 },
-    ],
-  };
-  // Chart config
-  data: any = {
+  // Series data
+  data: any = [{
     name: 'flare',
     children: [
       {
@@ -1088,8 +1051,9 @@ export class TypesTreeComponent {
         ],
       },
     ],
-  };
+  }];
 
+  // CHART JS Config object
   config: any = {
     grid: {borderColor: 'transparent'},
     xAxis: { show: false },
@@ -1101,7 +1065,7 @@ export class TypesTreeComponent {
     series: [
       {
         type: 'tree',
-        data: [this.data],
+        data: this.data,
 
         top: '10%',
         left: '10%',
@@ -1130,7 +1094,7 @@ export class TypesTreeComponent {
   };
 
   constructor() {
-    echarts.util.each(this.data.children, ((datum: any, index: number) => {
+    echarts.util.each(this.data[0].children, ((datum: any, index: number) => {
       return index % 2 === 0 && (datum.collapsed = true);
   }));
   }

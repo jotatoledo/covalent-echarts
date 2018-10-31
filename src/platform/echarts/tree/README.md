@@ -13,11 +13,11 @@
 There are also lots of property inputs like:
 
 + label?: any
-  + Text styles corresponding to each node, included in in leaves object as well 
+  + Text styles corresponding to each node, also used in the leaves object.
 + leaves?: any
-  + Styles for each leaf node in the tree, different from labels. See the code examples above
+  + Styles for each leaf node in the tree, can be used to differentiation node labels from leaf nodes. See the code examples above.
 + itemStyle?: any
-  + Styles for each node in the tree
+  + Styles for each node in the tree.
 + data?: any[]
   + Data array of series.
 

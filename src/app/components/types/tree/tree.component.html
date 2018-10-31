@@ -26,7 +26,7 @@
                             [left]="'10%'"
                             [bottom]="'10%'"
                             [right]="'10%'"
-                            [data]="[data]"
+                            [data]="data"
                             [initialTreeDepth]="2"
                             [symbolSize]="10"
                             [itemStyle]="{ borderColor: '#3A4950', color: '#3A4950' }"
@@ -59,12 +59,14 @@
                               [left]="'10%'"
                               [bottom]="'10%'"
                               [right]="'10%'"
-                              [data]="[data]"
+                              [data]="data"
                               [initialTreeDepth]="2"
                               [symbolSize]="10"
                               [itemStyle]="{ borderColor: '#3A4950', color: '#3A4950' }"
-                              [leaves]="{ label: { padding: [2.5, 5], fontSize: 9, distance: 5, position: 'right', backgroundColor: 'transparent', color: '#616d73' } }"
-                              [label]="{ backgroundColor: '#3A4950', color: 'white', padding: [2.5, 5], borderRadius: 10, fontSize: 9, distance: 5, position: 'left' }">
+                              [leaves]="{ label: { padding: [2.5, 5], fontSize: 9, distance: 5, position: 'right', 
+                                        backgroundColor: 'transparent', color: '#616d73' } }"
+                              [label]="{ backgroundColor: '#3A4950', color: 'white', padding: [2.5, 5], borderRadius: 10, 
+                                        fontSize: 9, distance: 5, position: 'left' }">
               </td-chart-series>
             </td-chart>
             ]]>

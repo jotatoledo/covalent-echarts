@@ -1,14 +1,6 @@
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { TdMediaService } from '@covalent/core/media';
 
-import 'echarts/lib/component/markPoint';
-import 'echarts/lib/component/markLine';
-import 'echarts/lib/component/markArea';
-import 'echarts/lib/component/title';
-import 'echarts/lib/component/legend';
-import 'echarts/lib/component/legendScroll';
-import 'echarts/lib/component/dataZoom';
-
 import { tdCollapseAnimation, tdRotateAnimation, tdFadeInOutAnimation } from '@covalent/core/common';
 
 @Component({
@@ -18,7 +10,7 @@ import { tdCollapseAnimation, tdRotateAnimation, tdFadeInOutAnimation } from '@c
   animations: [tdCollapseAnimation, tdRotateAnimation, tdFadeInOutAnimation],
 })
 export class ComponentsComponent {
-  
+
   miniNav: boolean = false;
 
   routes: Object[] = [
